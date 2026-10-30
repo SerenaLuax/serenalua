@@ -1,9 +1,9 @@
 /*
-Theme Name: aandrac
-Theme URI: http://localhost/aandrac
+Theme Name: Serena Luá
+Theme URI: http://localhost/serenalua
 Author: André Castro
-Author URI: http://localhost/aandrac
-Description: Tema base do projeto aandrac.
+Author URI: http://localhost/serenalua
+Description: Tema base do projeto Serena Luá.
 Version: 2.5.6
 Requires at least: 6.0
 Tested up to: 7.1
@@ -13,6 +13,14 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: aandrac
 Tags: custom-menu, custom-logo, featured-images, translation-ready
 */
+
+@font-face {
+	font-family: "Pertibd";
+	src: url("../font/PERTIBD.TTF") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
 
 @font-face {
 	font-family: "Monogram";
@@ -47,8 +55,8 @@ Tags: custom-menu, custom-logo, featured-images, translation-ready
 	--color-bg-detail: #050819;
 	--color-text: #ffffff;
 	--color-line: rgba(255, 255, 255, 0.08);
-	--color-green: #9bea20;
-	--color-yellow: #f2f53a;
+	--color-green: #001d5f;
+	--color-yellow: #001d5f;
 	--color-olive: #8f9818;
 	--color-rust: #8a4323;
 	--color-violet: #7659d6;
@@ -149,6 +157,8 @@ img {
 
 .site-title {
 	margin: 0;
+	font-family: "Pertibd", var(--font-display);
+	font-weight: 700;
 	font-size: 1.75rem;
 	letter-spacing: -0.02em;
 	transition: font-size 0.42s cubic-bezier(0.22, 1, 0.36, 1), color 0.35s ease;
@@ -302,6 +312,19 @@ body.home .site-main {
 	padding: 0;
 	display: flex;
 	flex-direction: column;
+}
+
+.home-cover {
+	--home-header-offset: 5.1rem;
+	position: relative;
+	min-height: calc( 100vh - var( --home-header-offset ) );
+	min-height: calc( 100svh - var( --home-header-offset ) );
+	background-color: #000;
+	background-image: url("../images/capa.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .home-hero {
@@ -1233,8 +1256,13 @@ body.projeto-modal-open {
 		transform: translate3d(0, var(--scroll-y, 0px), 0);
 	}
 
+	.home-cover,
 	.home-hero {
 		--home-header-offset: 4.2rem;
+	}
+
+	.home-cover {
+		background-attachment: scroll;
 	}
 
 	.projeto-modal {

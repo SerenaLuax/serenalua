@@ -1,4 +1,4 @@
-# aandrac — preview estático
+# Serena Luá — preview estático
 
 Pasta pronta para demonstração visual no GitHub Pages.
 
