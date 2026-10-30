@@ -49,65 +49,7 @@
 		</header>
 
 		<main class="site-main">
-			<section class="home-cover" aria-label="Capa"></section>
-
-			<!-- Hero em camadas (parallax). Para reativar: descomente este bloco, remova .home-cover e religue hero-parallax.js.
-			<section class="home-hero" data-parallax-hero>
-				<div class="home-sky" aria-hidden="true">
-					<img class="home-sky__layer home-sky__layer--stars" src="assets/images/hero-layer-stars.png" alt="" loading="eager">
-					<img
-						class="home-sky__layer home-sky__layer--planet"
-						src="assets/images/hero-layer-planet.png"
-						alt=""
-						loading="eager"
-						data-scroll-layer="true"
-						data-speed="0.15"
-					>
-					<img
-						class="home-sky__layer home-sky__layer--comet home-sky__layer--comet-1"
-						src="assets/images/hero-layer-comet-01.png"
-						alt=""
-						loading="eager"
-						data-scroll-comet="true"
-						data-start="0.12"
-						data-duration="0.22"
-						data-x="18"
-						data-y="10"
-						data-direction="up"
-					>
-					<img
-						class="home-sky__layer home-sky__layer--comet home-sky__layer--comet-2"
-						src="assets/images/hero-layer-comet-02.png"
-						alt=""
-						loading="eager"
-						data-scroll-comet="true"
-						data-start="0.48"
-						data-duration="0.2"
-						data-x="-16"
-						data-y="9"
-						data-direction="down"
-					>
-					<img
-						class="home-sky__layer home-sky__layer--comet home-sky__layer--comet-3"
-						src="assets/images/hero-layer-comet-03.png"
-						alt=""
-						loading="eager"
-						data-scroll-comet="true"
-						data-start="0.82"
-						data-duration="0.24"
-						data-x="14"
-						data-y="16"
-						data-direction="down"
-					>
-					<img
-						class="home-sky__layer home-sky__layer--rocket"
-						src="assets/images/hero-layer-rocket.png"
-						alt=""
-						loading="eager"
-						data-scroll-rocket="true"
-					>
-				</div>
-
+			<section class="home-cover" data-parallax-hero>
 				<div class="home-intro">
 					<h1 class="home-title" data-pointer-shadow data-title="Serena Luá">Serena Luá</h1>
 					<p class="home-subtitle">MOTION DESIGNER - ANIMAÇÃO 2D</p>
@@ -115,17 +57,72 @@
 						<p>Design em movimento que conta histórias,<br> constrói mundos e dá vida a ideias.</p>
 					</div>
 				</div>
-
-				<img
-					class="insert-coin-badge"
-					src="assets/images/hero-layer-neon-sign.png"
-					alt=""
-					width="180"
-					height="64"
-					loading="eager"
-					decoding="async"
-				>
 			</section>
+
+			<!-- Camadas de fundo do hero (céu, cometas, foguete, badge). Para reativar, descomente e coloque dentro de .home-cover.
+			<div class="home-sky" aria-hidden="true">
+				<img class="home-sky__layer home-sky__layer--stars" src="assets/images/hero-layer-stars.png" alt="" loading="eager">
+				<img
+					class="home-sky__layer home-sky__layer--planet"
+					src="assets/images/hero-layer-planet.png"
+					alt=""
+					loading="eager"
+					data-scroll-layer="true"
+					data-speed="0.15"
+				>
+				<img
+					class="home-sky__layer home-sky__layer--comet home-sky__layer--comet-1"
+					src="assets/images/hero-layer-comet-01.png"
+					alt=""
+					loading="eager"
+					data-scroll-comet="true"
+					data-start="0.12"
+					data-duration="0.22"
+					data-x="18"
+					data-y="10"
+					data-direction="up"
+				>
+				<img
+					class="home-sky__layer home-sky__layer--comet home-sky__layer--comet-2"
+					src="assets/images/hero-layer-comet-02.png"
+					alt=""
+					loading="eager"
+					data-scroll-comet="true"
+					data-start="0.48"
+					data-duration="0.2"
+					data-x="-16"
+					data-y="9"
+					data-direction="down"
+				>
+				<img
+					class="home-sky__layer home-sky__layer--comet home-sky__layer--comet-3"
+					src="assets/images/hero-layer-comet-03.png"
+					alt=""
+					loading="eager"
+					data-scroll-comet="true"
+					data-start="0.82"
+					data-duration="0.24"
+					data-x="14"
+					data-y="16"
+					data-direction="down"
+				>
+				<img
+					class="home-sky__layer home-sky__layer--rocket"
+					src="assets/images/hero-layer-rocket.png"
+					alt=""
+					loading="eager"
+					data-scroll-rocket="true"
+				>
+			</div>
+			<img
+				class="insert-coin-badge"
+				src="assets/images/hero-layer-neon-sign.png"
+				alt=""
+				width="180"
+				height="64"
+				loading="eager"
+				decoding="async"
+			>
 			-->
 
 			<div class="home-ground">
@@ -628,6 +625,6 @@
 	<script src="assets/js/sticky-header.js" defer></script>
 	<script src="assets/js/home-filter.js" defer></script>
 	<script src="assets/js/home-modal.js" defer></script>
-	<!-- <script src="assets/js/hero-parallax.js" defer></script> -->
+	<script src="assets/js/hero-parallax.js" defer></script>
 </body>
 </html>
